@@ -114,10 +114,11 @@ $(document).ready(function () {
     var thisBtn = $(this);
     var thisLi = thisBtn.parent().parent();
     var thisSection = thisLi.parent().parent().parent();
+    console.log(thisBtn.index());
     if (thisLi.index() == 0) {
       if (thisBtn.index() == 0 && order[0] > -10) {
         order[0]--;
-      } else if (order[0] < 10) {
+      } else if (thisBtn.index() == 2 && order[0] < 10) {
         order[0]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -127,7 +128,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 1) {
       if (thisBtn.index() == 0 && order[1] > -10) {
         order[1]--;
-      } else if (order[1] < 10) {
+      } else if (thisBtn.index() == 2 && order[1] < 10) {
         order[1]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -137,7 +138,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 2) {
       if (thisBtn.index() == 0 && order[2] > -10) {
         order[2]--;
-      } else if (order[2] < 10) {
+      } else if (thisBtn.index() == 2 && order[2] < 10) {
         order[2]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -147,7 +148,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 3) {
       if (thisBtn.index() == 0 && order[3] > -10) {
         order[3]--;
-      } else if (order[3] < 10) {
+      } else if (thisBtn.index() == 2 && order[3] < 10) {
         order[3]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -157,7 +158,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 4) {
       if (thisBtn.index() == 0 && order[4] > -10) {
         order[4]--;
-      } else if (order[4] < 10) {
+      } else if (thisBtn.index() == 2 && order[4] < 10) {
         order[4]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -174,7 +175,7 @@ $(document).ready(function () {
     if (thisLi.index() == 0) {
       if (thisBtn.index() == 0 && shrink[0] > 0) {
         shrink[0]--;
-      } else if (shrink[0] < 10) {
+      } else if (thisBtn.index() == 2 && shrink[0] < 10) {
         shrink[0]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -184,7 +185,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 1) {
       if (thisBtn.index() == 0 && shrink[1] > 0) {
         shrink[1]--;
-      } else if (shrink[1] < 10) {
+      } else if (thisBtn.index() == 2 && shrink[1] < 10) {
         shrink[1]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -194,7 +195,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 2) {
       if (thisBtn.index() == 0 && shrink[2] > 0) {
         shrink[2]--;
-      } else if (shrink[2] < 10) {
+      } else if (thisBtn.index() == 2 && shrink[2] < 10) {
         shrink[2]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -204,7 +205,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 3) {
       if (thisBtn.index() == 0 && shrink[3] > 0) {
         shrink[3]--;
-      } else if (shrink[3] < 10) {
+      } else if (thisBtn.index() == 2 && shrink[3] < 10) {
         shrink[3]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -214,7 +215,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 4) {
       if (thisBtn.index() == 0 && shrink[4] > 0) {
         shrink[4]--;
-      } else if (shrink[4] < 10) {
+      } else if (thisBtn.index() == 2 && shrink[4] < 10) {
         shrink[4]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -231,7 +232,7 @@ $(document).ready(function () {
     if (thisLi.index() == 0) {
       if (thisBtn.index() == 0 && grow[0] > 0) {
         grow[0]--;
-      } else if (grow[0] < 10) {
+      } else if (thisBtn.index() == 2 && grow[0] < 10) {
         grow[0]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -241,7 +242,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 1) {
       if (thisBtn.index() == 0 && grow[1] > 0) {
         grow[1]--;
-      } else if (grow[1] < 10) {
+      } else if (thisBtn.index() == 2 && grow[1] < 10) {
         grow[1]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -251,7 +252,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 2) {
       if (thisBtn.index() == 0 && grow[2] > 0) {
         grow[2]--;
-      } else if (grow[2] < 10) {
+      } else if (thisBtn.index() == 2 && grow[2] < 10) {
         grow[2]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -261,7 +262,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 3) {
       if (thisBtn.index() == 0 && grow[3] > 0) {
         grow[3]--;
-      } else if (grow[3] < 10) {
+      } else if (thisBtn.index() == 2 && grow[3] < 10) {
         grow[3]++;
       } else {
         alert("범위를 벗어났습니다.");
@@ -271,7 +272,7 @@ $(document).ready(function () {
     } else if (thisLi.index() == 4) {
       if (thisBtn.index() == 0 && grow[4] > 0) {
         grow[4]--;
-      } else if (grow[4] < 10) {
+      } else if (thisBtn.index() == 2 && grow[4] < 10) {
         grow[4]++;
       } else {
         alert("범위를 벗어났습니다.");

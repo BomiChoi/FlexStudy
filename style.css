@@ -151,8 +151,6 @@ main > .box {
   font-weight: bold;
   text-align: center;
   background: lightskyblue;
-  flex-shrink: 1;
-  flex-grow: 0;
 }
 main > .box:nth-child(1) {
   background: lightskyblue;
