@@ -1,28 +1,28 @@
 $(document).ready(function () {
-  var tabs = $(".tabs").find("a");
-  var panels = $(".panel");
-  var lastTab = $(".tabs").find("a").filter(".on");
-  var lastPanel = $(lastTab.attr("href"));
+  let tabs = $(".tabs").find("a");
+  let panels = $(".panel");
+  let lastTab = $(".tabs").find("a").filter(".on");
+  let lastPanel = $(lastTab.attr("href"));
 
-  var buttons = $(".buttons").find("button");
-  var wrap = $("main");
-  var boxes = $(".box");
-  var firstBox = boxes.first();
-  var setOrder = $(".order").find("button");
-  var setShrink = $(".shrink").find("button");
-  var setGrow = $(".grow").find("button");
+  let buttons = $(".buttons").find("button");
+  let wrap = $("main");
+  let boxes = $(".box");
+  let firstBox = boxes.first();
+  let setOrder = $(".order").find("button");
+  let setShrink = $(".shrink").find("button");
+  let setGrow = $(".grow").find("button");
 
-  var order = [1, 2, 3, 4, 5];
-  var shrink = [1, 1, 1, 1, 1];
-  var grow = [0, 0, 0, 0, 0];
+  let order = [1, 2, 3, 4, 5];
+  let shrink = [1, 1, 1, 1, 1];
+  let grow = [0, 0, 0, 0, 0];
 
   panels.hide();
   lastPanel.show();
 
   tabs.click(function (event) {
     event.preventDefault();
-    var thisTab = $(this);
-    var thisPanel = $(thisTab.attr("href"));
+    let thisTab = $(this);
+    let thisPanel = $(thisTab.attr("href"));
 
     lastTab.removeClass("on");
     thisTab.addClass("on");
@@ -169,9 +169,9 @@ $(document).ready(function () {
   });
 
   setShrink.click(function (event) {
-    var thisBtn = $(this);
-    var thisLi = thisBtn.parent().parent();
-    var thisSection = thisLi.parent().parent().parent();
+    let thisBtn = $(this);
+    let thisLi = thisBtn.parent().parent();
+    let thisSection = thisLi.parent().parent().parent();
     if (thisLi.index() == 0) {
       if (thisBtn.index() == 0 && shrink[0] > 0) {
         shrink[0]--;
@@ -226,9 +226,9 @@ $(document).ready(function () {
   });
 
   setGrow.click(function (event) {
-    var thisBtn = $(this);
-    var thisLi = thisBtn.parent().parent();
-    var thisSection = thisLi.parent().parent().parent();
+    let thisBtn = $(this);
+    let thisLi = thisBtn.parent().parent();
+    let thisSection = thisLi.parent().parent().parent();
     if (thisLi.index() == 0) {
       if (thisBtn.index() == 0 && grow[0] > 0) {
         grow[0]--;
