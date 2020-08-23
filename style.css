@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+button {
+  background: lightskyblue;
+  border: none;
+}
+button:hover {
+  background: rgb(61, 201, 194);
+}
+
+body {
+  background: rgb(245, 201, 201);
+  height: 100vh;
+}
+.wrapper {
+  margin: 0 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+}
+
+h1 {
+  height: 70px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.tabmenu {
+}
+.tabs {
+  display: flex;
+}
+.tabs > li {
+  width: 20%;
+  margin: 0 2px;
+}
+.tabs > li > a {
+  display: block;
+  height: 35px;
+  padding: 0 2px;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background: rgb(61, 201, 194);
+  border-radius: 10px 10px 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tabs > li > a.on,
+.tabs > li > a:hover {
+  background: white;
+}
+
+.panels {
+  background: white;
+  height: 150px;
+}
+
+.panels > .panel {
+  display: none;
+  padding: 15px;
+}
+.panels > .panel:nth-child(1) {
+  display: block;
+}
+.panels > .panel > section {
+}
+section > h2 {
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section > .buttons {
+  margin: 5px;
+  display: flex;
+}
+section > .buttons > button {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px;
+  padding: 0 10px;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+}
+section > .buttons > button.selected {
+  background: rgb(61, 201, 194);
+}
+
+section > .set {
+}
+section > .set > ul {
+  display: flex;
+}
+section > .set > ul > li {
+  width: 20%;
+}
+section > .set .boxname {
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+section > .set .value {
+  text-align: center;
+}
+section > .set .value > * {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+section > .set .value > button {
+  width: 18px;
+  height: 18px;
+}
+section > .set .value > span {
+}
+
+main {
+  margin: 10px 0;
+  height: 200px;
+  display: flex;
+  background: white;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+main > .box {
+  width: 150px;
+  height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background: lightskyblue;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+main > .box:nth-child(1) {
+  background: lightskyblue;
+  order: 1;
+}
+main > .box:nth-child(2) {
+  background: rgb(97, 168, 212);
+  order: 2;
+}
+main > .box:nth-child(3) {
+  background: rgb(72, 138, 179);
+  order: 3;
+}
+main > .box:nth-child(4) {
+  background: rgb(37, 93, 128);
+  order: 4;
+}
+main > .box:nth-child(5) {
+  background: rgb(6, 40, 61);
+  order: 5;
+}

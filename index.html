@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Study</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Flex Study</h1>
+        <div class="tabmenu">
+          <ul class="tabs">
+            <li><a href="#tab1" class="on">Direction & Wrap</a></li>
+            <li><a href="#tab2">Align1</a></li>
+            <li><a href="#tab3">Align2</a></li>
+            <li><a href="#tab4">Order</a></li>
+            <li><a href="#tab5">Shrink & Grow</a></li>
+          </ul>
+          <div class="panels">
+            <div class="panel" id="tab1">
+              <section class="direction">
+                <h2>flex-direction</h2>
+                <div class="buttons">
+                  <button class="selected">row</button>
+                  <button>column</button>
+                  <button>row-reverse</button>
+                  <button>column-reverse</button>
+                </div>
+              </section>
+              <section class="wrap">
+                <h2>flex-wrap</h2>
+                <div class="buttons">
+                  <button class="selected">nowrap</button>
+                  <button>wrap</button>
+                  <button>wrap-reverse</button>
+                </div>
+              </section>
+            </div>
+            <div class="panel" id="tab2">
+              <section class="justify_content">
+                <h2>justify-content</h2>
+                <div class="buttons">
+                  <button class="selected">flex-start</button>
+                  <button>center</button>
+                  <button>flex-end</button>
+                  <button>space-around</button>
+                  <button>space-between</button>
+                </div>
+              </section>
+              <section class="align_content">
+                <h2>align-content</h2>
+                <div class="buttons">
+                  <button class="selected">stretch</button>
+                  <button>flex-start</button>
+                  <button>center</button>
+                  <button>flex-end</button>
+                  <button>space-around</button>
+                  <button>space-between</button>
+                </div>
+              </section>
+            </div>
+            <div class="panel" id="tab3">
+              <section class="align_items">
+                <h2>align-items</h2>
+                <div class="buttons">
+                  <button class="selected">stretch</button>
+                  <button>flex-start</button>
+                  <button>center</button>
+                  <button>flex-end</button>
+                  <button>baseline</button>
+                </div>
+              </section>
+              <section class="align_self">
+                <h2>align-self</h2>
+                <div class="buttons">
+                  <button class="selected">auto</button>
+                  <button>flex-start</button>
+                  <button>center</button>
+                  <button>flex-end</button>
+                  <button>baseline</button>
+                </div>
+              </section>
+            </div>
+            <div class="panel" id="tab4">
+              <section class="order">
+                <h2>order</h2>
+                <div class="set">
+                  <ul>
+                    <li>
+                      <div class="boxname">Box1</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>1</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box2</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>2</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box3</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>3</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box4</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>4</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box5</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>5</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <div class="panel" id="tab5">
+              <section class="shrink">
+                <h2>flex-shrink</h2>
+                <div class="set">
+                  <ul>
+                    <li>
+                      <div class="boxname">Box1</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>1</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box2</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>1</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box3</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>1</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box4</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>1</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box5</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>1</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section class="grow">
+                <h2>flex-grow</h2>
+                <div class="set">
+                  <ul>
+                    <li>
+                      <div class="boxname">Box1</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>0</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box2</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>0</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box3</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>0</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box4</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>0</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="boxname">Box5</div>
+                      <div class="value">
+                        <button>&#60;</button>
+                        <span>0</span>
+                        <button>&#62;</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </main>
+    </div>
+  </body>
+</html>
